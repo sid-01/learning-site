@@ -23,7 +23,9 @@ body{
 .main{
   background-color: lightblue;
   grid-area: main;
-  text-align: center;
+   display:flex;
+  justify-content:center;
+  align-items:center;
 
 }
 .footer{
@@ -37,7 +39,9 @@ body{
 .sidebar{
   background-color: yellow;
   grid-area: sidebar;
-  text-align: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 .navbar{
   background-color: green;
