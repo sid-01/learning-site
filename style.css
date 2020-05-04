@@ -1,0 +1,72 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+.container{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 10vh 10vh 55vh 25vh;
+  grid-template-areas: "hd hd"
+                        "navbar navbar"
+                        "sidebar main"
+                        "footer footer"
+}
+.header{
+
+  grid-area: hd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main{
+  background-color: lightblue;
+  grid-area: main;
+  text-align: center;
+
+}
+.footer{
+  background-color: grey;
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.sidebar{
+  background-color: yellow;
+  grid-area: sidebar;
+  text-align: center;
+}
+.navbar{
+  background-color: green;
+  grid-area: navbar;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ul li{
+  list-style: none;
+  margin-right: 2rem;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+ul{
+  display: flex;
+
+}
+
+
+@media all and(min-device-width:720px) {
+  .navbar{
+    background-color: green;
+    grid-area: navbar;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
